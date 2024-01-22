@@ -1,24 +1,100 @@
+body {
+    background-color: grey;
+}
+
+.all {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+.retro {
+    background-color: rgba(255, 0, 0, 0.567);
+    height: 550px;
+    width: 750px;
+}
+
+.title {
+    font-size: xx-large;
+    display: flex;
+    justify-content: center;
+    /*margin: 30px;*/
+    color: gold;
+
+}
+
+.subTitle {
+    font-size: small;
+    display: flex;
+    align-items: center;
+    padding: 10px;
+}
+
+.menu {
+    display: flex;
+    justify-content: space-between;
+    margin: 10px;
+    /*border: solid 1px black;*/
+    color: gold;
+    
+}
+
+.sizeholder {
+    padding-right: 150px;
+
+}
+
 .screen {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    
+    
 }
 
 #container {
     height: 400px;
     width: 400px;
+    /*background-color: white;*/
 }
 
 .gridRow {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     display: flex;
+    background-color: lightgray;
     /*height: auto;*/
     /*width: 50%;*/
 }
 
 .cell {
-    border: 1px solid black;
+    /*border: 1px solid black;*/
     height: 25px;
     width: 25px;
+}
+
+.fakeBtns {
+    display: flex;
+    justify-content: space-between;
+}
+
+.leftFakeButton {
+    display: flex;
+    justify-items: end;
+    height: 80px;
+    width: 80px;
+    border: 1px solid black;
+    border-radius: 100%;
+    background-color: white;
+    margin: 40px;
+}
+
+.rightFakeButton {
+    height: 80px;
+    width: 80px;
+    border: 1px solid white;
+    border-radius: 100%;
+    background-color: white;
+    margin: 40px;
+    
 }
 
 .hover {

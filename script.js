@@ -28,7 +28,8 @@ function makeColumns (cellNum) {
 defaultGrid();
 
 function changeSquareColor() {
-    this.classList.add("hover")
+    this.classList.add("hover");
+    this.setAttribute("id", "filled");
 }
 
 let cell = document.querySelectorAll(".cell");
@@ -40,3 +41,27 @@ function addMouseover () {
 }
 
 addMouseover();
+
+
+
+function clearBoard() {
+    const clear = document.getElementById("clear");
+    
+    
+
+    clear.addEventListener("click", () => {
+        console.log("here")
+        const selected = document.getElementById("filled");
+        const classes = selected.classList;
+        classes.remove("hover");
+        selected.textContent = classes;
+        
+        console.log("here2")
+    })
+   
+
+
+    
+};
+
+clearBoard();
