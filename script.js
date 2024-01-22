@@ -43,25 +43,22 @@ function addMouseover () {
 addMouseover();
 
 
-
 function clearBoard() {
-    const clear = document.getElementById("clear");
+    const clearButton = document.getElementById("clear");
     
-    
+    clearButton.addEventListener("click", () => {
+        console.log("Clear button clicked");
 
-    clear.addEventListener("click", () => {
-        console.log("here")
-        const selected = document.getElementById("filled");
-        const classes = selected.classList;
-        classes.remove("hover");
-        selected.textContent = classes;
-        
-        console.log("here2")
-    })
-   
+        const cellsWithHover = document.getElementsByClassName("cell hover");
 
+        const cellsArray = Array.from(cellsWithHover);
 
-    
-};
+        cellsArray.forEach(cell => {
+            cell.classList.remove("hover");
+        });
+
+        console.log("Hover class removed from cells");
+    });
+}
 
 clearBoard();
